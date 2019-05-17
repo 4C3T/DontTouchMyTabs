@@ -5,7 +5,7 @@ A WebExtension that prevents tabs opened by a hyperlink from hijacking the previ
 ### Summary
 - It searches for any hyperlink that points to a page not hosted on the same domain as the viewed page and checks if it has the `target="_blank"` attribute.
   - If a hyperlink has no `rel=` attribute, it adds `rel=noopener` to the hyperlink.
-  - If a hyperlink already has a `rel=` attribute the `noopener` value is added to the other values.
+  - If a hyperlink already has a `rel=` attribute the `noopener` value is added to the existing values.
 
 ### Official browser extension pages
 | Browser | Location |
