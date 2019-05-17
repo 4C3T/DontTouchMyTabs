@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Don't touch my tabs! (rel=noopener)",
+  "version": "2.1",
+  "author": "Jeroen Swen",
+
+  "description": "Prevent tabs opened by a hyperlink from hijacking the previous tab by adding the rel=noopener attribute to all hyperlinks (excluding same-domain hyperlinks).",
+
+  "icons": {
+    "96": "icons/icon-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/main.js"]
+    }
+  ]
+
+}
